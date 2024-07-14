@@ -15,4 +15,5 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         env:
+          fail_ci_if_error: true
           CODECOV_TOKEN: ${{ secrets.CODECOV_ORG_TOKEN }}
